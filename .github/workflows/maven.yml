@@ -14,12 +14,10 @@ on:
   pull_request:
     branches: [ "main" ]
 
-permissions:
-  contents: write
-
 jobs:
-  
   build:
+    permissions:
+      contents: write
 
     runs-on: ubuntu-latest
 
